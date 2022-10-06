@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Counter from "./components/Counter";
 
 function App() {
+  const [counter, setCounter] = React.useState<number>(0)
+  const resetValue = 0
+  const isDisabledReset = counter <= 0
+  const isDisabledInc = counter === 5
+  const setCounterCallback = () => setCounter(counter + 1)
+  const resetCallback = () => setCounter(resetValue)
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Counter counter={counter}
+              setCounterCallback={setCounterCallback}
+              resetCallback={resetCallback}
+              isDisabledReset={isDisabledReset}
+              isDisabledInc={isDisabledInc}
+     />
     </div>
   );
 }

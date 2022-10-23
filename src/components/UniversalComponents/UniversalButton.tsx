@@ -7,9 +7,7 @@ type TUniversalButton = {
 }
 
 const UniversalButton: React.FC<TUniversalButton> = ({title,callback, buttonDisabled}) => {
-  const onClickHandler = () => {
-    callback()
-  }
+  const onClickHandler = () => callback()
   return (
     <button disabled={buttonDisabled} onClick={onClickHandler}>{title}</button>
   );

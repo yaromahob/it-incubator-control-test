@@ -50,6 +50,16 @@ h4 {
   border-radius: 5px;
 }
 
+.hasSet{
+  font-size: 22px;
+}
+
+.error{
+  color: red;
+  background-color: #282c34;
+  font-size: 30px;
+}
+
 .buttons-wrapper{
   display: flex;
   justify-content: space-evenly;

@@ -1,1 +1,1 @@
-# Deploy - [it-incubator-control-test](https://yaromahob.github.io/it-incubator-control-test)
+# Deploy - [it-incubator-control-test](https://it-incubator-control-test.vercel.app/)

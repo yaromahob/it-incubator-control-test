@@ -55,7 +55,7 @@ function App() {
   const setValuesCallback = () => {
     saveValuesCounter('START_VALUE', startValue)
     saveValuesCounter('MAX_VALUE', maxValue)
-    setCounter(START_SETTINGS_VALUE)
+    setCounter(startValue)
     setHasSet(false)
   }
   
